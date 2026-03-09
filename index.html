@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Personal - Portofollio</title>
+     <link rel="icon" href="img/icon.png">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+     rel="stylesheet" 
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <div class="container-fluid"> 
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <span class="logo"><img id="#home" width="50px" src="img/logo 1.png" alt=""></span>
+      </a>
+      <!-- زر الـ toggle للموبايل -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- الروابط -->
+  <div class="collapse navbar-collapse list" id="navbarContent">
+      <ul class="navbar-nav mx-auto" id="list">
+        <li class="nav-item">
+          <a class="nav-link" href="#home" data-ar="الرئيسية" data-en="Home"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" data-ar="عني" data-en="About"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills" data-ar="المهارات" data-en="Skills"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificates" data-ar="الشهادات" data-en="Certificate"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects" data-ar="المشاريع" data-en="Projects"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience" data-ar="الخبرات" data-en="Experience"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact" data-ar="تواصل" data-en="Contact"></a>
+        </li>
+      </ul>
+          <!-- زر تبديل اللغة -->
+      <div class="ms-3 lang">
+         <select id="language-switch" class="form-select form-select-sm bg-dark text-white border-warning">
+          <option value="ar">العربية</option>
+          <option value="en">English</option>
+          </select>
+        </div>
+    </div>
+  </nav>
+    
+
+
+<!-- قسم الـ Hero-->
+<section class="hero-section text-white py-5" style="padding-top: 140px !important; min-height: 100vh; display: flex; align-items: center;">
+      <!-- ────────────────────────────────────────────── -->
+    <!-- خلفياا -->
+    <div class="hero-background-slideshow">
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?w=1920&auto=format&fit=crop&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?w=1920&auto=format&fit=crop&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=1920&auto=format&fit=crop&q=80');"></div>
+      <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1557682250-33bd709cbe8b?w=1920&auto=format&fit=crop&q=80');"></div>
+    </div>
+
+    <!-- طبقة الـ overlay-->
+    <div class="hero-overlay"></div>
+  
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+
+      <!-- النص -->
+  <div class="col-lg-7">
+      <h1 id="home" class="display-3 fw-bold mb-3" style="color: #d4af37; font-family: 'Playfair Display', serif;" 
+        data-ar="مرحباً، أنا صلاح عبد الجيد" data-en="Hello, I'm Salah Abdel Gayed">
+           مرحباً، أنا صلاح عبد الجيد
+      </h1>
+      <h2 class="lead fs-3 mb-4 text-warning" 
+      data-ar="مطور ويب | مصمم واجهات | شغوف بالابتكار والتكنولوجيا" 
+      data-en="Web Developer | UI Designer | Passionate about Innovation Technology">
+    </h2>
+      <p class="mb-4 fs-5" style="max-width: 620px; line-height: 1.8; color: #c7c3c3;" 
+    data-ar="خريج متحمس للتعلم والنمو، مهارات تنظيمية وتواصلية قوية، عمل فردي/جماعي، دقة في المهام، الالتزام بالموعد النهائي، وتحسين المهارات لدعم أهداف الشركة" 
+    data-en="A graduate eager to learn and grow, with strong organizational and communication skills, able to work independently/in a team, meticulous in tasks, committed to deadlines, and continuously improving skills to support company goals.">
+    أساعد الشركات والأفراد في تحويل أفكارهم إلى منتجات رقمية مميزة، مع التركيز على تجربة المستخدم والأداء العالي.
+    </p>
+
+
+        <!-- الأزرار -->
+        <div class=" media_screen d-flex flex-wrap gap-3 mb-4 ">
+          <a href="Salah-Abdel-Jayed-Shabaan- CV.pdf" target="_blank" download>
+            <div class="button" data-tooltip="Size: 62Kb">
+          <div class="button-wrapper">
+            <div data-ar="السيرة الذاتية" data-en="My C.V" class="text"></div>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+              </span>
+            </div>
+          </div>
+          </a>
+          
+          <a href="https://wa.me/201027337247" target="_blank" class="pro-contact-btn btn-cont" 
+              data-ar="تواصل معي" data-en="Contact Me">
+              تواصل معي
+            </a>
+        </div>
+
+        <!-- أيقونات التواصل الاجتماعي -->
+        <div class="social-icons pt-3">
+          <a href="https://www.facebook.com/SalahAbdelJayed?mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/salah_abdeljayed/" target="_blank" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/201027337247" target="_blank" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        </div>
+
+      <!-- الصورة الشخصية -->
+
+      <div class="col-lg-4 text-center ipad"> 
+        <div class="profile-photo-wrapper">
+          <img src="img/Best.jpg" alt="صلاح عبد الجيد" 
+               class="img-fluid rounded-circle shadow-lg border border-1 border-warning"
+               style="width: 320px; height: 320px; object-fit: cover;">
+        </div>
+
+    </div>
+  </div>
+
+
+  </section>
+
+<!--عني-->
+<section id="about" class="py-5 bg text-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <!-- العنوان -->
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold" style="color: #d4af37; font-family: 'Playfair Display', serif;" 
+              data-ar="عني" data-en="About Me">
+            عني
+          </h2>
+          <div class="mx-auto" style="width: 80px; height: 3px; background: linear-gradient(to right, transparent, #d4af37, transparent);"></div>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+          <!-- الصورة الشخصية -->
+          <div class="col-lg-4 text-center">
+            <div class="position-relative">
+              <img src="img/03.jpg" alt="صلاح عبد الجيد" 
+                   class="img-fluid rounded shadow-lg border border-4 border-warning-subtle"
+                   style="width: 300px; height: 400px; object-fit: cover;"> <!-- طولية: عرض 300px, ارتفاع 400px -->
+              <!-- تأثير خفيف حول الصورة ي) -->
+              <div class="position-absolute top-0 start-50 translate-middle-x rounded photo-effect" >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <h3 class="fw-semibold mb-4" style="color: #d4af37;" 
+                data-ar="أهلا! أنا صلاح عبد الجيد" data-en="Hello! I'm Salah Abdel Gaid">
+            </h3>
+
+            <p class="lead text-white-50 mb-4" 
+               data-ar="خريج كلية التجارة – جامعة الأزهر – قسم المحاسبة باللغة الإنجليزية، لكن شغفي الحقيقي هو الإبداع الرقمي والمونتاج والتطوير." 
+               data-en="I graduated from the Faculty of Commerce - Al-Azhar University - Department of Accounting in English, but my real passion is digital creativity, editing and development.">
+              خريج متحمس يسعى للتعلم والنمو في بيئة عمل مهنية، مع مهارات تنظيمية وتواصلية جيدة، وقدرة على العمل بشكل مستقل أو ضمن فريق، مع التركيز على أداء المهام بدقة وتحقيق المواعيد النهائية.
+            </p>
+
+            <p class="mb-4" style="line-height: 1.8; font-size: 1.1rem;" 
+               data-ar="بدأت مسيرتي في عالم الأرقام والحسابات، لكنني سرعان ما اكتشفت أن قدرتي على ترتيب الأفكار وتحويلها إلى شيء مرئي ومؤثر أقوى بكثير. اليوم أجمع بين الدقة المحاسبية والإبداع التقني لأصنع محتوى ومواقع تجذب وتُبهر."
+               data-en="I began my journey in the world of numbers and calculations,
+                but I quickly discovered that my ability to organize ideas and transform them into 
+                something visual and impactful was far stronger. Today, I combine accounting precision 
+               with technical creativity to create engaging and captivating content and websites
+              ">
+            </p>
+            <h4 style="color: #d4af37; font-family: 'Playfair Display', serif;"
+             data-ar="خبرة في المونتاج " class="bi-camera-video-fill"
+             data-en="Video Editing">
+            </h4>
+            <!-- المونتاج-->
+            <p class="mb-4 text-white-50" style="line-height: 1.8;" 
+               data-ar="لدي الخلفية الكافية في المونتاج. وأحب تحويل الأفكار الي فيديوهات قوية التأثير - سواء كانت ترويجية تعليمية او شخصية" 
+               data-en="I have sufficient background in video editing.
+                And I love turning ideas into powerful, impactful videos
+                 – whether they're promotional, educational, or personal.">
+                </p>
+            <h4 style="color: #d4af37; font-family: 'Playfair Display', serif;" 
+            data-ar="تطوير الويب" class="bi-code" data-en="Web development">
+            
+            </h4>
+            <!-- تطوير الويب-->
+            <p class="mb-4 text-white-50" style="line-height: 1.8;" 
+               data-ar="أمتلك المعلومات الكافية في HTML . CSS . JS . Bootstrap لأبني مواقع سريعة وجميلة." 
+               data-en="I have sufficient knowledge in HTML, CSS, JS, and Bootstrap 
+               to build fast and beautiful websites.">
+              </p>
+              <h5 style="line-height: 3rem;" data-ar="أومن أن أفضل النتائج تأتي من الجمع بين المنطق التحليلي (خلفيتي المحاسبية) 
+                       والابداع البصري (شغفي بالمونتاج والتصميم)"
+                       data-en="I believe the best results come from combining analytical logic (my accounting background) with visual creativity 
+                       (my passion for video editing and design).">
+              </h5>
+            <!-- الأزرار -->
+            <div class="mt-5 text-center text-lg-start">
+              <a href="https://github.com/salah-2000" target="_blank" class="btn-cont pro-contact-btn m-3" data-ar="شاهد أعمالي" data-en="View My Work">شاهد أعمالي</a>
+              <a href="https://t.me/salah_abdeljayed" target="_blank" class="pro-btn pro-contact-btn" data-ar="تواصل معي" data-en="Contact Me">تواصل معي <i class="bi bi-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--قسم المهارات   -->
+<section id="skills" class="py-5 text-white">
+  <div class="container">
+    <!-- العنوان الإبداعي -->
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold" style="color: #d4af37; font-family: 'Playfair Display', serif;" data-ar="المهارات" data-en="Skills">
+      </h2>
+      <p class="lead text-body" data-ar="من المحاسبة إلى الإبداع الرقمي والمونتاج" data-en="From accounting to digital creativity and video editing"></p>
+      <div class="mx-auto mt-3" style="width: 140px; height: 4px; background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>
+    </div>
+
+    <div class="row g-5">
+      <!-- المهارات التقنية (مع شريط التقدم الإبداعي) -->
+      <div class="col-lg-7">
+        <h4 class="text-warning mb-4" data-ar="🛠️ المهارات التقنية" data-en="Technical-skills"></h4>
+        
+        <div class="skills-grid">
+          <!-- Excel -->
+          <div class="skill-item">
+            <div class="d-flex justify-content-between mb-2">
+              <span><i class="bi bi-file-earmark-spreadsheet-fill text-success"></i> Microsoft Excel</span>
+              <span class="text-body" data-ar="متقدم" data-en="Advanced"></span>
+            </div>
+            <div class="progress" style="height: 10px;">
+              <div class="progress-bar bg-warning" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <!-- Word -->
+          <div class="skill-item">
+            <div class="d-flex justify-content-between mb-2">
+              <span><i class="bi bi-file-earmark-word-fill text-primary"></i> Microsoft Word</span>
+              <span class="text-body" data-ar="متوسط" data-en="Advanced"></span>
+            </div>
+            <div class="progress" style="height: 10px;">
+              <div class="progress-bar bg-warning" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <!-- Video Editing -->
+          <div class="skill-item">
+            <div class="d-flex justify-content-between mb-2">
+              <span><i class="bi bi-camera-video-fill text-danger"></i> Video Editing</span>
+              <span class="text-body" data-ar="" data-en="professional"></span>
+            </div>
+            <div class="progress" style="height: 10px;">
+              <div class="progress-bar bg-warning" style="width: 85%"></div>
+            </div>
+            <small class="text-body">InShot • CapCut • DaVinci Resolve</small>
+          </div>
+
+          <!-- Odoo & Power BI -->
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span><i class="bi bi-building-fill text-info"></i> Odoo ERP</span>
+                  <span class="text-body" data-ar="مبتدئ" data-en="begginer"></span>
+                </div>
+                <div class="progress" style="height: 10px;">
+                  <div class="progress-bar bg-warning" style="width: 45%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- المهارات الناعمة + اللغات (تصميم بطاقات إبداعية) -->
+      <div class="col-lg-5">
+        <h4 class="text-warning mb-4" data-ar="🧠 المهارات الناعمة" data-en="Soft-skills"></h4>
+        <div class="row g-3">
+          <div class="col-6"><div class="soft-skill"><i class="bi bi-lightbulb-fill"></i> التفكير التحليلي</div></div>
+          <div class="col-6"><div class="soft-skill"><i class="bi bi-eye-fill"></i> الدقة والاهتمام بالتفاصيل</div></div>
+          <div class="col-6"><div class="soft-skill"><i class="bi bi-people-fill"></i> العمل الجماعي</div></div>
+          <div class="col-6"><div class="soft-skill"><i class="bi bi-puzzle-fill"></i> حل المشكلات</div></div>
+          <div class="col-6"><div class="soft-skill"><i class="bi bi-lightning-charge-fill"></i> التعلم السريع</div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- الشهادات -->
+<section id="certificates" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-warning text-center display-5 fw-bold mb-5" data-ar="الشهادات" data-en="certificates"></h2>
+    <!-- Carousel -->
+    <div id="certCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+      
+      <!-- Indicators (نقاط تحت عشان يعرف عدد الشهادات) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#certCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <!-- أضف زر لكل شهادة إضافية -->
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="card bg-dark border border-warning border-2 shadow-lg mx-auto" style="max-width: 700px;">
+            <img src="img/certificates/acc_Ar.jpg" class="card-img-top" alt="شهادة Google UX Design" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning fw-bold" data-ar="شهادة من تدريبي في مكتب محاسبة" data-en="Certificate from my training at an accounting firm "></h5>
+              <p class="card-text text-warning small mb-3">2022 - 2024</p>
+              <a href="cer_pdf/acc_ar.pdf" target="_blank" class="btn btn-outline-warning btn-lg px-5" data-ar="عرض الشهادة الكاملة (PDF)" data-en="Show certificate (PDF)">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="card bg-dark border border-warning border-2 shadow-lg mx-auto" style="max-width: 700px;">
+            <img src="img/certificates/acc_original.jpg" class="card-img-top" alt="شهادة Meta Front-End Developer" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning fw-bold" data-ar="شهادة من تدريب في مكتب محاسبة" data-en="Certificate from my training at an accounting firm"></h5>
+              <p class="card-text text-warning small mb-3">2024 - 2025</p>
+              <a href="cer_pdf/acc_original.pdf" target="_blank" class="btn btn-outline-warning btn-lg px-5" data-ar="عرض الشهادة الكاملة (PDF)" data-en="Show certificate (PDF)">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3  -->
+          <div class="carousel-item">
+          <div class="card bg-dark border border-warning border-2 shadow-lg mx-auto" style="max-width: 700px;">
+            <img src="img/certificates/c_2.jpg" class="card-img-top" alt="شهادة Meta Front-End Developer" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning fw-bold" data-ar="شهادات البرمجة الخاصة بمسار الواجهات الامامية" data-en="Front-end programming certifications"></h5>
+              <p class="card-text text-warning small mb-3"> • 2022</p>
+              <a href="cer_pdf/programing.pdf" target="_blank" class="btn btn-outline-warning btn-lg px-5" data-ar="عرض الشهادة الكاملة (PDF)" data-en="Show certificate (PDF)">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4  -->
+          <div class="carousel-item">
+          <div class="card bg-dark border border-warning border-2 shadow-lg mx-auto" style="max-width: 700px;">
+            <img src="img/certificates/collge.jpg" class="card-img-top" alt="شهادة Meta Front-End Developer" loading="lazy">
+            <div class="card-body text-center">
+              <h5 class="card-title text-warning fw-bold" data-ar="بكالريوس تجارة قسم المحاسبة - شعبة اللغة الانجليزية" data-en="Bachelor of Commerce, Accounting Department - English Section"></h5>
+              <p class="card-text text-warning small mb-3"> 2025</p>
+              <a href="cer_pdf/college.pdf" target="_blank" class="btn btn-outline-warning btn-lg px-5" data-ar="عرض الشهادة الكاملة (PDF)" data-en="Show certificate (PDF)">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls (الأسهم يمين ويسار) -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">السابق</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">التالي</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- المشاريع -->
+<div class="portofollio bg padding-section3" id="Portofollio" >
+ <h2 id="projects" class="display-4 fw-bold mb-3" 
+ style="color: #d4af37; font-family: 'Playfair Display', serif; text-align: center;" 
+ data-ar="أعمالي" data-en="My Projects">
+        أعمالي
+  </h2>
+    <div class="mx-auto mt-4" style="width: 120px; height: 4px; background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>
+    <div class="work-list">
+        <div class="work">
+            <img class="img-work" src="img/work-1.png">
+            <div class="layer">
+                <h3 data-ar="متجر الكتروني" data-en="E- commerce"></h3>
+                <p data-ar="حاجة شبيهة متجر الكتروني اشتغلت عليه فترة الجامعة وقت ما كنت بتعلم البرمجة" 
+                data-en="Something similar to an online store I worked on during my university years when I was learning programming"></p>
+                <a href="https://salah-2000.github.io/Black-and-White/"><img class="link" src="img/link.png"></a>
+            </div>
+        </div>
+        <div class="work">
+            <img class="img-work" src="img/work-2.jpg" height="435px">
+                        <div class="layer">
+                <h3 data-ar="التعليق الصوتي" data-en="Voice Over"></h3>
+                <p data-ar="دي قناتي علي اليوتيوب كنت اشتغلت عليه في فترة من الفترات بس لسبب ما واقفت الشغل عليها" 
+                data-en="This is my YouTube channel. I used to work on it for a while, but for some reason I stopped working on it."></p>
+                <a href="https://www.youtube.com/channel/UC76dpu_fCD9N8_Os8cNiVcA"><img class="link" src="img/link.png"></a>
+            </div>
+        </div>
+        <div class="work">
+            <img class="img-work" src="img/work-3.png">
+                        <div class="layer">
+                <h3 data-ar="مشروع صغير" data-en="Small Project"></h3>
+                <p data-ar="تقدر تستخدمه لو عندك محل صغير او ميني ماركت ويفيد اكثر محلات الموبيلات"
+                data-en="You can use it if you have a small shop or mini-market, and it's especially useful for mobile phone shops."></p>
+                <a href="https://salah-2000.github.io/crud-JS/"><img class="link" src="img/link.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--قسم الخبرات   1) -->
+<section id="experience" class="py-5 text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 data-ar="الخبرات" data-en="Experiences" class="display-5 fw-bold" style="color: #d4af37; font-family: 'Playfair Display', serif;">
+      </h2>
+          <div class="mx-auto mt-3" style="width: 120px; height: 4px; background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>   
+    </div>
+
+    <div class="timeline">
+
+      <!-- خبرة 1 -->
+      <div class="timeline-item">
+        <div class="timeline-date" data-ar="أغسطس 2025 – ديسمبر 2025" data-en="August 2025 – December 2025"></div>
+        <div class="timeline-content">
+          <h4 data-ar="كاشير" data-en="Cashier"></h4>
+          <h5 data-ar=" مراعي الاديب(شركة منتجات الألبان) • المنصورة " data-en="(Dairy Products Company) • Mansoura Maraay Al-Adeeb" class="text-warning">Mraay Al-Adeeb</h5>
+          <ul>
+            <li data-ar="إدارة المعاملات النقدية اليومية وتسوية المبيعات (حتى 150 معاملة في الوردية)" data-en="Managing daily cash transactions and settling sales (up to 150 transactions per shift)"></li>
+            <li data-ar="المشاركة في جرد المخزون وتقارير المبيعات" data-en="Participating in inventory counting and sales reports"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- خبرة 2 -->
+      <div class="timeline-item">
+        <div class="timeline-date" data-ar="يناير 2022 – أكتوبر 2024" data-en="January 2022 – October 2024"></div>
+        <div class="timeline-content">
+          <h4 data-ar="تدريب في مكتب محاسبة" data-en="Accounting Intern"></h4>
+          <h5 class="text-warning" data-ar="مكتب محمد عبد الرؤوف للمحاسبة • القاهرة" data-en="Mohamed Abdel Raouf Accounting Office • Cairo"></h5>
+          <ul>
+            <li data-ar="المساعدة في إعداد القيود اليومية والقوائم المالية" data-en="Assistance in preparing journal entries and financial statements"></li>
+            <li data-ar="العمل على برامج المحاسبة والتقارير" data-en="Working with accounting and reporting software"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- خبرة 3 -->
+      <div class="timeline-item">
+        <div class="timeline-date" data-ar="فبراير 2021 – أغسطس 2023" data-en="February 2021 – August 2023"></div>
+        <div class="timeline-content">
+          <h4 data-ar="مندوب مبيعات وتسويق - دوام جزئي" data-en="Sales and Marketing Representative (Part-Time)">(Part-time)</h4>
+          <h5 class="text-warning" data-ar="(شركة الأعشاب الطبيعية – مقر أمريكي) FOREVER" data-en="(Natural Herbs Company – US Headquarters) FOREVER"></h5>
+          <ul>
+            <li data-ar="إدارة المبيعات عبر الإنترنت وإغلاق الصفقات" data-en="Managing online sales and closing deals"></li>
+            <li data-ar="التعامل مع استفسارات العملاء وتحقيق الأهداف الشهرية" data-en="Handling customer inquiries and achieving monthly targets"></li>
+            <li data-ar="تطوير مهارات التواصل" data-en="Developing communication skills"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- خبرة 4 -->
+      <div class="timeline-item">
+        <div class="timeline-date" data-ar="يوليو 2022 – أغسطس 2022" data-en="July 2022 – August 2022"></div>
+        <div class="timeline-content">
+          <h4 data-ar="خدمة عملاء" data-en="(Call Center Agent)"></h4>
+          <h5 class="text-warning" data-ar="شركة النيل • المنصورة" data-en="Nile Company • Mansoura"></h5>
+          <ul>
+            <li data-ar="تقديم الدعم للعملاء وحل المشكلات بكفاءة" data-en="Providing customer support and resolving problems efficiently"></li>
+            <li data-ar="تحسين مهارات حل المشكلات" data-en="Improving problem-solving skills"></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- قسم التواصل  -->
+<section id="contact" class="py-5 bg-black text-white">
+  <div class="container">
+    <div class="row justify-content-center img-cont">
+      <div class="col-lg-9">
+
+        <!-- العنوان -->
+        <div class="text-center mb-5">
+          <h2 data-ar="تواصل معي" data-en="Contact Me" class="display-5 fw-bold" style="color: #d4af37; font-family: 'Playfair Display', serif;">
+          </h2>
+            <div class="mx-auto mt-1" style="width: 120px; height: 4px; background: linear-gradient(90deg, transparent, #d4af37, transparent);"></div>
+          <p class="lead text-secondary mt-lg-4" data-ar="أنا جاهز أسمع منك وأتعاون معاك" data-en="I am ready to listen to you and cooperate with you"></p>       
+        </div>
+
+        <div class="row g-5">
+          <!-- النموذج -->
+          <div class="col-lg-7 photo img-cont img-contact">
+           <div class="profile-photo-wrapper">
+              <img src="img/Best.jpg" alt="صلاح عبد الجيد" 
+                class="img-fluid rounded-circle shadow-lg border border-1 border-warning ">
+            </div>
+          </div>
+
+          <!-- معلومات التواصل -->
+          <div class="col-lg-5 concat">
+            <div class="contact-info h-100">
+              <div class="info-item">
+                <i class="bi bi-envelope-fill"></i>
+                <div>
+                  <h6 class="text-warning" data-ar="البريد الإلكتروني" data-en="E - Mail"></h6>
+                  <a href="mailto:salah.abdeljayed@gmail.com">salah.abdeljayed@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="bi bi-telephone-fill"></i>
+                <div>
+                  <h6 class="text-warning" data-ar="رقم الواتساب" data-en="Whatsapp"></h6>
+                  <a href="https://wa.me/201027337247" target="_blank">+20 102 733 7247</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div>
+                  <h6 class="text-warning" data-ar="الموقع" data-en="Location"></h6>
+                  <p data-ar="أجا، محافظة الدقهلية، مصر" data-en="Aga, Dakahlia Governorate, Egypt"></p>
+                </div>
+              </div>
+
+              <a href="Salah-Abdel-Jayed-Shabaan- CV.pdf" target="_blank" download>
+            <div class="button" data-tooltip="Size: 62Kb">
+            <div class="button-wrapper">
+            <div data-ar="السيرة الذاتية" data-en="My C.V" class="text"></div>
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+              </span>
+            </div>
+          </div>
+          </a>
+
+              <!-- أيقونات التواصل -->
+              <div class="mt-5 pt-4 border-top border-secondary">
+                <p class="text-secondary-emphasis mb-3" data-ar="تقد تراسلني من خلال:" data-en="shoot me a message"></p>
+                <div class="social-icons d-flex gaps-4">
+                  <a href="https://www.facebook.com/SalahAbdelJayed?mibextid=ZbWKwL" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/salah_abdeljayed/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://wa.me/201027337247" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                  <a href="#home"><span class="logo-cont"><img id="#home" width="70px" src="img/logo 1.png" alt=""></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="copy_right text-center py-4 mt-auto">
+  <p class="text-light mb-0">
+    © <span id="year"></span> 
+    <span class="text-warning fw-bold">Salah Abdel Gayed</span> 
+    . جميع الحقوق محفوظة.
+  </p>
+</footer>
+
+
+<!-- زر الإعدادات لفتح الـ menu -->
+<button class="btn btn-dark position-fixed bottom-0 end-0 m-4" id="settings-btn" style="z-index: 1000;">
+  <i class="bi bi-gear-fill fs-4"></i>
+</button>
+
+<!-- الـ Menu المخفي -->
+<div id="settings-menu" class="position-fixed bottom-0 end-0 m-4 p-4 bg-secondary rounded-3 shadow-lg d-none" style="z-index: 1001; width: 280px;">
+  <h5 class="text-white mb-3" data-ar="اختر لون:" data-en="Choose Color:"></h5>
+  <div class="d-flex gap-2 mb-4">
+    <button class="color-btn" style="background: #a0a0c0;" data-color="#a0a0c0"></button>
+    <button class="color-btn" style="background: #ad8613;" data-color="#ad8613"></button>
+    <button class="color-btn" style="background: #388e3c;" data-color="#388e3c"></button>
+    <button class="color-btn" style="background: #560bad;" data-color="#560bad"></button>
+    <button class="color-btn" style="background: #c9a96b;" data-color="#c9a96b"></button>
+  </div>
+
+  <h5 class="text-white mb-3" data-ar="اختر المظهر:" data-en="Choose Mode:"></h5>
+  <div class="d-grid gap-2">
+    <button class="btn btn-light" id="light-mode" data-ar="فاتح" data-en="Light"></button>
+    <button class="btn btn-dark" id="dark-mode" data-ar="غامق" data-en="Dark"></button>
+  </div>
+</div>
+
+
+
+<!-- Popper.js (مطلوب لـ Bootstrap 5 dropdowns و collapse) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="document.js"></script>
+</body>
+</html>
